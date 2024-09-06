@@ -6,4 +6,20 @@ for i in range(len(arr)):
         break
     else:
         continue
+
+
+
+#2nd approch   
+arr = [9,7,75,67,87,87]
+
+u = list(set(arr))  # Remove duplicates
+
+if len(u) == 1:
+    if len(u) > 1:
+        print(u[1])
+    else:
+        print("no")# The second largest unique element
+else:
+    if len(u) > 1:
+        print(u[-2])  # The second largest unique element
         
